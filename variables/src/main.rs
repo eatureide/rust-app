@@ -16,6 +16,9 @@ fn main() {
     // println!("the value ofx is {}", x);
     // println!("const is {}", MAX_POINT)
 
-    let guess: u32 = "42".parse().expect("not a number");
-    println!("{}", guess);
+    // let guess: u32 = "42".parse().expect("not a number");
+    // println!("{}", guess);
+
+    let tup = (500, 6.4, 1);
+    println!("{},{},{}", tup.0, tup.1, tup.2);
 }
