@@ -19,6 +19,9 @@ fn main() {
     // let guess: u32 = "42".parse().expect("not a number");
     // println!("{}", guess);
 
-    let tup = (500, 6.4, 1);
-    println!("{},{},{}", tup.0, tup.1, tup.2);
+    // let tup = (500, 6.4, 1);
+    // println!("{},{},{}", tup.0, tup.1, tup.2);
+
+    // let month = ["january", "february"];
+    // println!("{}", month[1])
 }
