@@ -23,7 +23,7 @@ impl Rectangle {
 
 fn main() {
     let s = Rectangle::squre(20);
-    
+
     let rect1 = Rectangle {
         width: 30,
         length: 50,
@@ -36,6 +36,7 @@ fn main() {
         width: 35,
         length: 55,
     };
+    
     println!("{:?}", rect1.can_hold(&rect2));
     println!("{:?}", rect2.can_hold(&rect3));
 }
