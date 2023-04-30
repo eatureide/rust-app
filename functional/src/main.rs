@@ -117,12 +117,90 @@ fn main() {
     //     s.len()
     // }
 
+    // let mut s1 = String::from("hello");
+    // {
+    //     let s2 = &mut s1;
+    // }
 
-    let mut s1 = String::from("hello");
-    {
-        let s2 = &mut s1;
-    }
+    // let s3 = &mut s1;
 
-    let s3 = &mut s1;
+    // let mut s = String::from("hello");
+    // let r1 = &s;
+    // let r2 = &s;
+    // // let s1: &mut String = &mut s;
 
+    // println!("{},{}", r1, r2);
+
+    // let r = dangle();
+    // fn dangle() -> &String {
+    //     let s = String::from("hello");
+    //     &s
+    // }
+    // let s = String::from("hello wolrd");
+    // let word = first_world(&s);
+    // // s.clear();
+    // println!("{}", word);
+
+    // fn first_world(s: &String) -> &str {
+    //     let bytes = s.as_bytes();
+    //     let key = b' ';
+    //     for (i, &item) in bytes.iter().enumerate() {
+    //         if item == key {
+    //             print!("{}", item);
+    //             return &s[..i];
+    //         }
+    //     }
+    //     &s[..]
+    // }
+
+    // let arr = [1, 2, 3, 4];
+    // for i in arr.iter() {
+    //     println!("{}", i);
+    // }
+
+    // let s = String::from("hello wolrd");
+    // let hello = &s[..5];
+    // let world = &s[6..];
+    // let whole = &s[..];
+
+    // println!("{}", whole);
+    // println!("{},{}", hello, world);
+
+    // struct User {
+    //     username: String,
+    //     email: String,
+    //     sign_in_count: u64,
+    //     active: bool,
+    // }
+
+    // let mut user1 = User {
+    //     email: String::from("abc@email.com"),
+    //     username: String::from("nikky"),
+    //     active: true,
+    //     sign_in_count: 556,
+    // };
+
+    // fn build_user(email: String, username: String) -> User {
+    //     User {
+    //         email,
+    //         username,
+    //         active: true,
+    //         sign_in_count: 0,
+    //     }
+    // }
+
+    // let email = String::from("78@qq.com");
+    // let username = String::from("Eature");
+    // let user1 = build_user(email, username);
+
+    // let user2 = User {
+    //     email: String::from("123@.com"),
+    //     username: String::from("username"),
+    //     active: user1.active,
+    //     ..user1
+    // };
+    // struct Color(i32, i32);
+    // let c = Color(12, 12);
+
+    
 }
