@@ -91,20 +91,38 @@ fn main() {
     //     println!("{}", some_number);
     // }
 
-    let s1 = gives_ownership();
+    // let s1 = gives_ownership();
 
-    let s2: String = String::from("hello");
-    let s3 = takes_and_gives_back(s2);
-    println!("{}", s3);
-}
+    // let s2: String = String::from("hello");
+    // let s3 = takes_and_gives_back(s2);
+    // println!("{}", s3);
+    // fn gives_ownership() -> String {
+    //     let some_string = String::from("hello");
+    //     some_string
+    //     // return some_string;
+    // }
 
-fn gives_ownership() -> String {
-    let some_string = String::from("hello");
-    some_string
-    // return some_string;
-}
+    // fn takes_and_gives_back(a_string: String) -> String {
+    //     println!("{}", a_string);
+    //     a_string
+    // }
 
-fn takes_and_gives_back(a_string: String) -> String {
-    println!("{}", a_string);
-    a_string
+    // let mut s1 = String::from("hello");
+    // let len = calculate_length(&mut s1);
+
+    // println!("{},{}", s1, len);
+
+    // fn calculate_length(s: &mut String) -> usize {
+    //     s.push_str(",world");
+    //     s.len()
+    // }
+
+
+    let mut s1 = String::from("hello");
+    {
+        let s2 = &mut s1;
+    }
+
+    let s3 = &mut s1;
+
 }
