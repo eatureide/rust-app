@@ -27,22 +27,32 @@
 //     }
 // }
 
-fn plus_one(x: Option<i32>) -> Option<i32> {
-    match x {
-        None => None,
-        Some(i) => Some(i + 1),
-    }
-}
+// fn plus_one(x: Option<i32>) -> Option<i32> {
+//     match x {
+//         None => None,
+//         Some(i) => Some(i + 1),
+//     }
+// }
 
 fn main() {
-    let v = 0u8;
-    match v {
-        1 => println!("one"),
-        2 => println!("two"),
-        _ => (),
+    let v = Some(0u8);
+
+    println!("{:?}", v);
+    
+    if let Some(3) = v {
+        println!("three");
+    } else {
+        println!("others");
     }
 
-    println!("{}", v);
+    // let v = 0u8;
+    // match v {
+    //     1 => println!("one"),
+    //     2 => println!("two"),
+    //     _ => (),
+    // }
+
+    // println!("{}", v);
 
     // let five = plus_one(Some(50));
     // print!("{:?}", five);

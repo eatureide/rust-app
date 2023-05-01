@@ -1,0 +1,1 @@
+H:\Users\ilove\Documents\project\rust-app\package_demo\target\debug\package_demo.exe: H:\Users\ilove\Documents\project\rust-app\package_demo\src\lib.rs H:\Users\ilove\Documents\project\rust-app\package_demo\src\main.rs
