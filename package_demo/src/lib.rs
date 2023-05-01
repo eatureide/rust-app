@@ -80,7 +80,15 @@
 
 // // fn main() {}
 
-use std::collections::*;
-use std::io::{self, Write};
+// use std::collections::*;
+// use std::io::{self, Write};
 
-fn main() {}
+// fn main() {}
+
+mod front_of_house;
+
+pub use crate::front_of_house::hosting;
+
+fn main() {
+    hosting::add_to_waitlist();
+}
